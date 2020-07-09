@@ -19,6 +19,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::resource('contacto' , 'ContactoController');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('auth/social', 'Auth\LoginController@showLoginForm')->name('social.login');
